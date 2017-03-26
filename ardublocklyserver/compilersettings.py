@@ -182,13 +182,15 @@ class ServerCompilerSettings(object):
 
     def set_compiler_dir_from_file(self, new_compiler_dir):
         """ The compiler dir must be full path to an existing file. """
+        print(os.path.abspath("arduino\\arduino_debug.exe"))
         if os.path.exists(new_compiler_dir):
             self.__compiler_dir = new_compiler_dir
-        else:
+        else:            
+            self.__compiler_dir = os.path.abspath("arduino\\arduino_debug.exe")
             print('\nThe provided compiler path in the settings file is not ' +
                   'valid:')
             print('\t%s' % new_compiler_dir)
-            self.set_compiler_dir_default()
+            # self.set_compiler_dir_default()
             print('Default compiler path set:\n\t%s' % self.__compiler_dir)
 
     #
@@ -249,7 +251,8 @@ class ServerCompilerSettings(object):
                 print('Previous Sketch directory maintained:\n\t%s' %
                       self.__sketch_dir)
             else:
-                self.set_sketch_dir_default()
+                self.__sketch_dir = os.path.abspath(".\\ArdublocklySketch\\")
+                # self.set_sketch_dir_default()
                 print('Default Sketch directory set:\n\t%s' %
                       self.__sketch_dir)
                 self.save_settings()

@@ -185,10 +185,10 @@ ArdublocklyServer.createElementFromJson = function(json_data) {
     el_out.className = 'arduino_dialog_out';
     // If larger than 50 characters then don't bother looking for language key
     if (parsed_json.output.length < 50) {
-      el_out.innerHTML = Ardublockly.getLocalStr(parsed_json.output) ||
-                         parsed_json.output.split('\n').join('<br />');
+      el_out.innerHTML = parsed_json.output ||
+                         parsed_json.output.split('\n').join('<br />') + parsed_json.error_output.split('\n').join('<br />');
     } else {
-      el_out.innerHTML = parsed_json.output.split('\n').join('<br />');
+      el_out.innerHTML = parsed_json.output.split('\n').join('<br />') + parsed_json.error_output.split('\n').join('<br />');
     }
 
     element = document.createElement('div');

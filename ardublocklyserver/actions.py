@@ -121,10 +121,10 @@ def load_arduino_cli(sketch_path=None):
                 shell=False)
             out, error = process.communicate()
             out = six.u(out)
+            print('Arduino output:\n%s' % out)            
             error = six.u(error)
-            exit_code = process.returncode
-            print('Arduino output:\n%s' % out)
             print('Arduino Error output:\n%s' % error)
+            exit_code = process.returncode
             print('Arduino Exit code: %s' % exit_code)
             # For some reason Arduino CLI can return 256 on success
             if (process.returncode != 0) and (process.returncode != 256):

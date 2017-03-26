@@ -185,12 +185,9 @@ def handle_sketch(sketch_code):
     json_data = \
         {'response_type': 'ide_output',
          'element': 'div_ide_output',
-         'success': success,
-         'conclusion': conclusion,
-         'output': out,
-         'error_output': error,
-         'exit_code': exit_code}
+         'success': str(success),
+         'conclusion': str(conclusion),
+         'output': str(out),
+         'error_output': str(error),
+         'exit_code': str(exit_code)}
     return json.dumps(json_data)
-
-
-
