@@ -1,3 +1,13 @@
+C'est un fork de Ardublockly pour une adaptation aux modules HackInvent.
+
+Par défaut la langue est le français.
+
+Il intègre par défaut le compilateur Arduino, c'est un peu volumineux mais nous allons faire le ménage dans un second temps.
+
+Il faut installer Python 3.6 pour l'utiliser.
+
+Une fois python installé, n'oublier pas de vérifier que le chemin vers Python est bien pris en compte dans les variables environmentales et redérammer votre ordinateur si vous êtes sous WINDOWS.
+
 # Ardublockly
 Ardublockly is a visual programming editor for Arduino. It is based on Google's [Blockly][1], which has been forked to generate [Arduino][15] code.
 
