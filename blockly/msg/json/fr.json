@@ -9,7 +9,8 @@
 			"Grimault",
 			"Rixed",
 			"Frigory",
-			"Thibaut VIARD"
+			"Thibaut VIARD",
+			"HackInvent"
 		]
 	},
 	"VARIABLES_DEFAULT_NAME": "élément",
@@ -492,5 +493,8 @@
 	"ARD_TONE_TIP": " Configurer le signal de tonalité dans la plage: 31 - 65535",
 	"ARD_TONE_WARNING": "La fréquence doit être dans la plage 31 - 65535",
 	"ARD_NOTONE": "Eteindre la tonalité du signal #",
-	"ARD_NOTONE_TIP": "Eteindre / Activer la tonalité du signal selectioné"
+	"ARD_NOTONE_TIP": "Eteindre / Activer la tonalité du signal selectioné",
+	"HI_SETLED": "Pour la TinkerLED connecée à",
+	"HI_SETINTENSITY": "fixer l'intensité à",
+	"LED_RANGE_WARNING": "La valeur de l'intenstité doit être entre 0 et 255"
 }

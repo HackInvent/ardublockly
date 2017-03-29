@@ -1240,3 +1240,8 @@ Blockly.Msg.NEW_INSTANCE = 'New instance...';
 Blockly.Msg.RENAME_INSTANCE = 'Rename instance...';
 Blockly.Msg.NEW_INSTANCE_TITLE = 'New instance name:';
 Blockly.Msg.RENAME_INSTANCE_TITLE = 'Rename all "%1" instances to:';
+
+/// Set LED
+Blockly.Msg.HI_SETLED = 'For the LED connected to ';
+Blockly.Msg.HI_SETINTENSITY = 'set the intentity to ';
+Blockly.Msg.LED_RANGE_WARNING = 'The value of the intensity shall be between 0 and 255 ';

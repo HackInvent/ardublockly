@@ -177,7 +177,7 @@ Ardublockly.TOOLBOX_XML =
 '      <field name="TONEPIN">0</field>' +
 '      <value name="FREQUENCY">' +
 '        <shadow type="math_number">' +
-'          <field name="NUM">220</field>' +
+'          <field name="NUM">230</field>' +
 '        </shadow>' +
 '      </value>' +
 '    </block>' +
@@ -216,7 +216,7 @@ Ardublockly.TOOLBOX_XML =
 '    </block>' +
 '  </category>' +
 '  <sep></sep>' +
-'  <category id="catComms" name="Comms">' +
+'  <category id="catComms" name="Comms caca">' +
 '    <block type="serial_setup"></block>' +
 '    <block type="serial_print"></block>' +
 '    <block type="text_prompt_ext">' +
@@ -227,5 +227,11 @@ Ardublockly.TOOLBOX_XML =
 '    <block type="spi_setup"></block>' +
 '    <block type="spi_transfer"></block>' +
 '    <block type="spi_transfer_return"></block>' +
+'  </category>' +
+'  <sep></sep>' +
+'  <category id="catHackInvent" name="HackInvent">' +
+'    <block type="hi_led">' +
+'      <field name="LEDPIN">3</field>' +
+'    </block>' +
 '  </category>' +
 '</xml>';

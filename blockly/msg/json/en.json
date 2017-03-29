@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2016-10-09 00:55:05.070000",
+		"lastupdated": "2017-03-29 23:34:49.098000",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -483,5 +483,8 @@
 	"NEW_INSTANCE": "New instance...",
 	"RENAME_INSTANCE": "Rename instance...",
 	"NEW_INSTANCE_TITLE": "New instance name:",
-	"RENAME_INSTANCE_TITLE": "Rename all '%1' instances to:"
+	"RENAME_INSTANCE_TITLE": "Rename all '%1' instances to:",
+	"HI_SETLED": "For the LED connected to ",
+	"HI_SETINTENSITY": "set the intentity to ",
+	"LED_RANGE_WARNING": "The value of the intensity shall be between 0 and 255 "
 }

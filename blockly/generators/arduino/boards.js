@@ -89,8 +89,8 @@ Blockly.Arduino.Boards.profiles.uno = {
   analogPins: Blockly.Arduino.Boards.generateAnalogIo(0, 5),
   digitalPins: Blockly.Arduino.Boards.generateDigitalIo(0, 13).concat(
                    Blockly.Arduino.Boards.generateAnalogIo(0, 5)),
-  pwmPins: [['3', '3'], ['5', '5'], ['6', '6'], ['9', '9'], ['10', '10'],
-            ['11', '11']],
+  pwmPins: [['D3', '3'], ['D5', '5'], ['D6', '6'], ['D9', '9'], ['D10', '10'],
+            ['D11', '11']],
   serial: [['serial', 'Serial']],
   serialPins: { Serial: [['RX', '0'], ['TX', '1']] },
   serialSpeed: [['300', '300'], ['600', '600'], ['1200', '1200'],
