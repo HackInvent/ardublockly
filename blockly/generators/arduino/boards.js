@@ -25,7 +25,7 @@ goog.require('Blockly.Arduino');
 Blockly.Arduino.Boards.generateDigitalIo = function(pinStart, pinEnd) {
   var digitalIo = [];
   for (var i = pinStart; i < (pinEnd + 1); i++) {
-    digitalIo.push([i.toString(), i.toString()]);
+    digitalIo.push(['D' + i.toString(), i.toString()]);
   }
   return digitalIo;
 };

@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2017-03-29 23:34:49.098000",
+		"lastupdated": "2017-03-30 22:20:40.887000",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -486,5 +486,7 @@
 	"RENAME_INSTANCE_TITLE": "Rename all '%1' instances to:",
 	"HI_SETLED": "For the LED connected to ",
 	"HI_SETINTENSITY": "set the intentity to ",
-	"LED_RANGE_WARNING": "The value of the intensity shall be between 0 and 255 "
+	"LED_RANGE_WARNING": "The value of the intensity shall be between 0 and 255 ",
+	"HI_SETSTATE": "set the state to ",
+	"HI_SETLED_TIP": "To control the LED "
 }
