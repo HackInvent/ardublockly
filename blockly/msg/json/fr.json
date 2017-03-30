@@ -497,5 +497,6 @@
 	"HI_SETLED": "Pour la TinkerLED connecée à",
 	"HI_SETINTENSITY": "fixer l'intensité à",
 	"LED_RANGE_WARNING": "La valeur de l'intenstité doit être entre 0 et 255",
-	"HI_SETSTATE": "Fixer l'état à "
+	"HI_SETSTATE": "Fixer l'état à ",
+	"HI_SETLED_TIP": "Pour contrôler une LED"
 }
