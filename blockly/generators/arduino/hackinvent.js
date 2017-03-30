@@ -15,16 +15,16 @@ goog.require('Blockly.Arduino');
 
 
 /**
- * Function for turning the TinkerLib library on on a given pin (X).
+ * Function for turning the TinkerLed library on on a given pin (X).
  * Arduino code: setup { pinMode(X, OUTPUT) }
- *               loop  { tone(X, frequency) }
+ *               loop  { analogWrite(X, val) }
  * @param {!Blockly.Block} block Block to generate the code from.
  * @return {array} Completed code with order of operation.
  */
 
 Blockly.Arduino['hi_led'] = function(block) {
   var pin = block.getFieldValue('LEDPIN');
-  var freq = Blockly.Arduino.valueToCode(block, 'INTENSITY', Blockly.Arduino.ORDER_ATOMIC);
+  var val = Blockly.Arduino.valueToCode(block, 'INTENSITY', Blockly.Arduino.ORDER_ATOMIC);
   Blockly.Arduino.reservePin(
       block, pin, Blockly.Arduino.PinTypes.OUTPUT, 'Led Pin');
 
@@ -32,12 +32,12 @@ Blockly.Arduino['hi_led'] = function(block) {
   Blockly.Arduino.addSetup('io_' + pin, pinSetupCode, false);
 
   // Warn if the input value is out of range
-  if ((freq < 0) || (freq > 255)) {
+  if ((val < 0) || (val > 255)) {
     block.setWarningText('The analogue value set must be between 0 and 255',
                          'pwm_value');
   } else {
     block.setWarningText(null, 'pwm_value');
   }
-  var code = 'analogWrite(' + pin + ', ' + freq + ');\n';
+  var code = 'analogWrite(' + pin + ', ' + val + ');\n';
   return code;
 };
