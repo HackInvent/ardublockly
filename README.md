@@ -1,4 +1,4 @@
-C'est un fork de Ardublockly pour une adaptation aux modules HackInvent.
+C'est un fork de Ardublockly (http://ardublockly.embeddedlog.com) pour une adaptation aux modules HackInvent.
 
 Par défaut la langue est le français.
 
