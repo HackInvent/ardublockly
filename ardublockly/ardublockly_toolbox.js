@@ -216,7 +216,7 @@ Ardublockly.TOOLBOX_XML =
 '    </block>' +
 '  </category>' +
 '  <sep></sep>' +
-'  <category id="catComms" name="Comms caca">' +
+'  <category id="catComms" name="Comms">' +
 '    <block type="serial_setup"></block>' +
 '    <block type="serial_print"></block>' +
 '    <block type="text_prompt_ext">' +
