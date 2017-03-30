@@ -235,6 +235,9 @@ Ardublockly.TOOLBOX_XML =
 '    </block>' +
 '    <block type="hi_led_digi">' +
 '      <field name="LEDPIN">3</field>' +
+'      <value name="STATE">' +
+'        <block type="io_highlow"></block>' +
+'      </value>' +
 '    </block>' +
 '  </category>' +
 '</xml>';
