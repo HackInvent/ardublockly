@@ -76,9 +76,9 @@
       </a>
       <!-- Horizontal Navbar links only shown on large resolutions -->
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="#" id="button_load"><span class="translatable_open">Open</span><i class="mdi-file-file-upload left"></i></a></li>
-        <li><a href="#" id="button_save"><span class="translatable_save">Save</span><i class="mdi-file-file-download left"></i></a></li>
-        <li><a href="#" id="button_delete"><span class="translatable_deleteAll">Delete All</span><i class="mdi-action-delete left"></i></a></li>
+        <li><a href="#" id="button_load"><span id="translatable_open" class="translatable_open">Open</span><i class="mdi-file-file-upload left"></i></a></li>
+        <li><a href="#" id="button_save"><span id="translatable_save" class="translatable_save">Save</span><i class="mdi-file-file-download left"></i></a></li>
+        <li><a href="#" id="button_delete"><span id="translatable_deleteAll" class="translatable_deleteAll">Delete All</span><i class="mdi-action-delete left"></i></a></li>
       </ul>
     </div>
   </nav>
@@ -88,9 +88,9 @@
     <li class="logo"><img src="img/sidenav_header.png" alt="Ardublockly block image"></li>
     <li class="no-padding">
       <ul>
-        <li id="menu_load"><a href="#"><span class="translatable_open">Open</span><i class="mdi-file-file-upload left"></i></a></li>
-        <li id="menu_save"><a href="#"><span class="translatable_save">Save</span><i class="mdi-file-file-download left"></i></a></li>
-        <li id="menu_delete"><a href="#"><span class="translatable_deleteAll">Delete All</span><i class="mdi-action-delete left"></i></a></li>
+        <li id="menu_load"><a href="#"><span id="menu_translatable_open" class="translatable_open">Open</span><i class="mdi-file-file-upload left"></i></a></li>
+        <li id="menu_save"><a href="#"><span id="menu_translatable_save" class="translatable_save">Save</span><i class="mdi-file-file-download left"></i></a></li>
+        <li id="menu_delete"><a href="#"><span id="menu_translatable_deleteAll" class="translatable_deleteAll">Delete All</span><i class="mdi-action-delete left"></i></a></li>
         <li id="menu_settings"><a href="#"><span class="translatable_settings">Settings</span><i class="mdi-action-settings left"></i></a></li>
         <li id="menu_bug"><a href="https://github.com/carlosperate/ardublockly/wiki" target="_blank"><span class="translatable_documentation">Documentation</span><i class="mdi-action-help left"></i></a></li>
         <li id="menu_bug"><a href="http://github.com/carlosperate/ardublockly/issues" target="_blank"><span class="translatable_reportBug">Report Bug</span><i class="mdi-action-bug-report left"></i></a></li>
@@ -176,7 +176,7 @@
           <li>
             <div class="collapsible-header active">
               <span class="collapsible_logo">{ }</span>
-              <span class="translatable_arduinoSourceCode">Arduino Source Code</span>
+              <span id="translatable_arduinoSourceCode" class="translatable_arduinoSourceCode">Arduino Source Code</span>
             </div>
             <div class="collapsible-body">
               <pre id="content_arduino" class="content content_height_transition content_arduino_large"></pre>
@@ -203,7 +203,7 @@
       <li>
         <div id="ide_output_collapsible_header" class="collapsible-header ide_output_header_normal">
           <i class="mdi-action-swap-vert Medium" style="font-size: 2.2rem;"></i>
-          <span class="translatable_arduinoOpMainTitle">Arduino IDE output</span>
+          <span id="translatable_arduinoOpMainTitle" class="translatable_arduinoOpMainTitle">Arduino IDE output</span>
         </div>
         <div class="collapsible-body">
           <div id="content_ide_output" class="content"></div>

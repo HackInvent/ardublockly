@@ -26,6 +26,13 @@ Ardublockly.init = function() {
   Ardublockly.bindActionFunctions();
   Ardublockly.bindBlocklyEventListeners();
 
+  Ardublockly.arduinoOpMainTitle();
+  Ardublockly.arduinoSourceCode();
+
+  Ardublockly.arduinoOpen();
+  Ardublockly.arduinoSave();
+  Ardublockly.arduinoDeleteAll();
+
   // Check if not running locally
   if (document.location.hostname != 'localhost') {
     Ardublockly.openNotConnectedModal();

@@ -79,7 +79,7 @@ Ardublockly.LOCALISED_TEXT = {
   cancel: "Annuler",
   return: "Retour",
   /* Cards */
-  arduinoSourceCode: "",
+  arduinoSourceCode: "Code source Arduino",
   blocksXml: "Blocs XML",
   /* Toolbox Categories*/
   catLogic: "Logique",

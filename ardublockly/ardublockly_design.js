@@ -16,6 +16,8 @@ Ardublockly.designJsInit = function() {
   Ardublockly.resizeToggleToolboxBotton();
   Ardublockly.sketchNameSizeEffect();
   Ardublockly.sketchNameSet();
+
+
 };
 
 /**
@@ -386,6 +388,28 @@ Ardublockly.arduinoIdeOutput = function(bodyEl) {
   Ardublockly.highlightIdeOutputHeader();
 };
 
+Ardublockly.arduinoOpMainTitle = function(bodyEl) {
+  var ideOuputContent = document.getElementById('translatable_arduinoOpMainTitle');
+  ideOuputContent.innerHTML = Ardublockly.getLocalStr('arduinoOpMainTitle');
+};
+
+Ardublockly.arduinoSourceCode = function(bodyEl) {
+  var ideOuputContent = document.getElementById('translatable_arduinoSourceCode');
+  ideOuputContent.innerHTML = Ardublockly.getLocalStr('arduinoSourceCode');
+};
+
+Ardublockly.arduinoOpen = function(bodyEl) {
+  var ideOuputContent = document.getElementById('menu_translatable_open');
+  ideOuputContent.innerHTML = Ardublockly.getLocalStr('open');
+};
+Ardublockly.arduinoSave = function(bodyEl) {
+  var ideOuputContent = document.getElementById('menu_translatable_save');
+  ideOuputContent.innerHTML = Ardublockly.getLocalStr('save');
+};
+Ardublockly.arduinoDeleteAll = function(bodyEl) {
+  var ideOuputContent = document.getElementById('menu_translatable_deleteAll');
+  ideOuputContent.innerHTML = Ardublockly.getLocalStr('deleteAll');
+};
 /**
  * Clears the content of the Arduino IDE output element to a default text.
  * @param {!element} bodyEl HTML to include into IDE output content area.
