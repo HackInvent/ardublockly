@@ -46,7 +46,7 @@ Blockly.Blocks['hi_led_digi'] = {
     this.appendValueInput('STATE')
         .appendField(Blockly.Msg.HI_SETLED)
         .appendField(new Blockly.FieldDropdown(
-            Blockly.Arduino.Boards.selected.pwmPins), 'LEDPIN')
+            Blockly.Arduino.Boards.selected.digitalPins), 'LEDPIN')
         .appendField(Blockly.Msg.HI_SETSTATE)
         .setCheck(Blockly.Types.BOOLEAN.checkList);
     this.setInputsInline(true);
