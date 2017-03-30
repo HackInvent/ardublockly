@@ -43,7 +43,7 @@ Blockly.Blocks['hi_led'] = {
 
 Blockly.Blocks['hi_led_digi'] = {
   init: function() {
-    this.appendValueInput('INTENSITY')
+    this.appendValueInput('STATE')
         .appendField(Blockly.Msg.HI_SETLED)
         .appendField(new Blockly.FieldDropdown(
             Blockly.Arduino.Boards.selected.pwmPins), 'LEDPIN')
