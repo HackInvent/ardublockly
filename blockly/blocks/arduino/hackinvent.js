@@ -40,3 +40,25 @@ Blockly.Blocks['hi_led'] = {
     return Blockly.Types.NUMBER;
   }
 };
+
+Blockly.Blocks['hi_led_digi'] = {
+  init: function() {
+    this.appendValueInput('INTENSITY')
+        .appendField(Blockly.Msg.HI_SETLED)
+        .appendField(new Blockly.FieldDropdown(
+            Blockly.Arduino.Boards.selected.pwmPins), 'LEDPIN')
+        .appendField(Blockly.Msg.HI_SETSTATE)
+        .setCheck(Blockly.Types.BOOLEAN.checkList);
+    this.setInputsInline(true);
+    this.setPreviousStatement(true, null);
+    this.setNextStatement(true, null);
+    this.setColour(Blockly.Blocks.hackinvent.HUE);
+    this.setTooltip(Blockly.Msg.HI_SETLED_TIP);
+    this.setHelpUrl('https://www.hackinvent.com/l/tinker-led.html');
+  },
+  
+  /** @return {!string} The type of input value for the block, an integer. */
+  getBlockType: function() {
+    return Blockly.Types.NUMBER;
+  }
+};
