@@ -41,3 +41,16 @@ Blockly.Arduino['hi_led'] = function(block) {
   var code = 'analogWrite(' + pin + ', ' + val + ');\n';
   return code;
 };
+
+Blockly.Arduino['hi_led_digi'] = function(block) {
+  var pin = block.getFieldValue('LEDPIN');
+  var val = Blockly.Arduino.valueToCode(block, 'STATE', Blockly.Arduino.ORDER_ATOMIC) || 'LOW';
+  
+  Blockly.Arduino.reservePin(block, pin, Blockly.Arduino.PinTypes.OUTPUT, 'Led Pin');
+  
+  var pinSetupCode = 'pinMode(' + pin + ', OUTPUT);\n';
+  Blockly.Arduino.addSetup('io_' + pin, pinSetupCode, false);
+  
+  var code = 'digitalWrite(' + pin + ', ' + val + ');\n';
+  return code;
+};
