@@ -78,9 +78,9 @@ class ServerCompilerSettings(object):
     __serial_ports = {'port0': 'COM1'}
 
     # Class dictionary to define IDE load options, static content
-    __ide_load_options = {'open': 'Open sketch in IDE',
-                          'verify': 'Verify sketch',
-                          'upload': 'Compile and Upload sketch'}
+    __ide_load_options = {'verify': 'Verify sketch',
+                          'upload': 'Compile and Upload sketch',
+                          'open': 'Open sketch in IDE'}
 
     #
     # Singleton creator and destructor
@@ -178,7 +178,7 @@ class ServerCompilerSettings(object):
     compiler_dir = property(get_compiler_dir, set_compiler_dir)
 
     def set_compiler_dir_default(self):
-        self.__compiler_dir = None
+        self.__compiler_dir = os.path.abspath("arduino\\arduino_debug.exe")
 
     def set_compiler_dir_from_file(self, new_compiler_dir):
         """ The compiler dir must be full path to an existing file. """
@@ -300,7 +300,7 @@ class ServerCompilerSettings(object):
     arduino_board = property(get_arduino_board, set_arduino_board)
 
     def set_arduino_board_default(self):
-        self.__arduino_board_key = sorted(self.__arduino_types.keys())[0]
+        self.__arduino_board_key = list(self.__arduino_types.keys())[0]
         self.__arduino_board_value = \
             self.__arduino_types[self.__arduino_board_key]
 
@@ -503,7 +503,7 @@ class ServerCompilerSettings(object):
 
     def set_load_ide_default(self):
         self.__load_ide_option = \
-            sorted(self.__ide_load_options.keys())[0]
+            list(self.__ide_load_options.keys())[0]
 
     def set_load_ide_from_file(self, new_load_option):
         if new_load_option in self.__ide_load_options:
