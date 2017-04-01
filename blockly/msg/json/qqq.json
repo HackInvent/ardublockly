@@ -482,5 +482,12 @@
 	"HI_SETINTENSITY": "",
 	"LED_RANGE_WARNING": "",
 	"HI_SETSTATE": "",
-	"HI_SETLED_TIP": ""
+	"HI_SETLED_TIP": "",
+	"HI_RGBLED": "",
+	"HI_SETRED": "",
+	"HI_SETGREEN": "",
+	"HI_SETBLUE": "",
+	"HI_SETVAULE": "",
+	"HI_BUTTON": "",
+	"HI_POTENTIOMETER": ""
 }

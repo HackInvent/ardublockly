@@ -498,5 +498,12 @@
 	"HI_SETINTENSITY": "fixer l'intensité à",
 	"LED_RANGE_WARNING": "La valeur de l'intenstité doit être entre 0 et 255",
 	"HI_SETSTATE": "Fixer l'état à ",
-	"HI_SETLED_TIP": "Pour contrôler une LED"
+	"HI_SETLED_TIP": "Pour contrôler une LED",
+	"HI_RGBLED": "Tinker RGB LED",
+	"HI_SETRED": "pin rouge à",
+	"HI_SETGREEN": "pin vert à",
+	"HI_SETBLUE": "pin bleu à",
+	"HI_SETVAULE": "value to",
+	"HI_BUTTON": "Tinker Button lire",
+	"HI_POTENTIOMETER": "Tinker Potentiometer lire"
 }

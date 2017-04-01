@@ -239,5 +239,14 @@ Ardublockly.TOOLBOX_XML =
 '        <block type="io_highlow"></block>' +
 '      </value>' +
 '    </block>' +
+'    <block type="hi_rgbled">' +
+'      <field name="REDLEDPIN">3</field>' +
+'      <field name="GREENLEDPIN">5</field>' +
+'      <field name="BLUELEDPIN">6</field>' +
+'    </block>' +
+'    <block type="hi_button">' +
+'      <field name="BUTTONPIN">0</field>' +
+'    </block>' +
+'    <block type="hi_potentiometer"></block>' +
 '  </category>' +
 '</xml>';

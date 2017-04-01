@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2017-03-30 23:11:30.404000",
+		"lastupdated": "2017-04-01 17:44:11.871000",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -488,5 +488,12 @@
 	"HI_SETINTENSITY": "set the intentity to ",
 	"LED_RANGE_WARNING": "The value of the intensity shall be between 0 and 255 ",
 	"HI_SETSTATE": "set the state to ",
-	"HI_SETLED_TIP": "To control the LED "
+	"HI_SETLED_TIP": "To control the LED ",
+	"HI_RGBLED": "Tinker RGB LED",
+	"HI_SETRED": "Red pin to",
+	"HI_SETGREEN": "Green pin to",
+	"HI_SETBLUE": "Blue pin to",
+	"HI_SETVAULE": "value to",
+	"HI_BUTTON": "Tinker Button read pin",
+	"HI_POTENTIOMETER": "Tinker Potentiometer read pin"
 }
