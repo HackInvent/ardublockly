@@ -9,11 +9,10 @@ Il faut installer Python 3.6 pour l'utiliser.
 Une fois python installé, n'oublier pas de vérifier que le chemin vers Python est bien pris en compte dans les variables environmentales et redérammer votre ordinateur si vous êtes sous WINDOWS.
 
 # Ardublockly
-Ardublockly is a visual programming editor for Arduino. It is based on Google's [Blockly][1], which has been forked to generate [Arduino][15] code.
+Ardublockly est un éditeur graphique pour programmer les cartes Arduino. Il est basé sur [Blockly][1] développé par Google, il a été modifié pour générer du code pour [Arduino][15].
 
-The `ArdublocklyServer` Python package initialises a local server to be able to compile and load the Arduino code using the [Arduino IDE][2].
+Le package Python `ArdublocklyServer` lance un serveur web en locle qui permet de compiler du code Arduino en passant par l'intermédiaire de l'éditeur Arduino ([Arduino IDE][2]).
 
-This is all packaged in a self contained executable desktop application for Windows, Mac OS X, and Linux.
 
 ![Ardublockly desktop program screenshot][desktop_screeshot]
 
